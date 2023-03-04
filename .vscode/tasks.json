@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "android",
+			"path": "nlw/mobile",
+			"problemMatcher": [],
+			"label": "npm: android - nlw/mobile",
+			"detail": "expo start --android"
+		}
+	]
+}
