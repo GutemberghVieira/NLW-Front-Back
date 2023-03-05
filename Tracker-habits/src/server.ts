@@ -23,13 +23,14 @@ import cors    from '@fastify/cors'
 import { appRoutes } from './routes'
 const app = Fastify()
 
+const port = process.env.PORT || 3333
  
 app.register(cors)
 app.register(appRoutes)
 
 //Abre uma porta para um site host:'0.0.0.0'
 app.listen({
- port: 3333,
+ port: process.env.PORT ? Number(process.env.PORT) : 3333,
  
  host:'0.0.0.0',
 
