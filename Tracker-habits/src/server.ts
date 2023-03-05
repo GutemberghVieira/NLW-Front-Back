@@ -23,14 +23,16 @@ import cors    from '@fastify/cors'
 import { appRoutes } from './routes'
 const app = Fastify()
 
-
+ 
 app.register(cors)
 app.register(appRoutes)
 
-//Abre uma porta para um site 
+//Abre uma porta para um site host:'0.0.0.0'
 app.listen({
  port: 3333,
- host:'0.0.0.0'
+ 
+ host:'0.0.0.0',
+
 }).then((url) => {
   console.log(`HTTP server running on ${url}`);
 
