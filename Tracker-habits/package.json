@@ -1,20 +1,23 @@
+
 {
+
+
   "dependencies": {
     "@fastify/cors": "^8.2.0",
     "@prisma/client": "^4.9.0",
     "axios": "^1.3.2",
     "dayjs": "^1.11.7",
     "fastify": "^4.12.0",
-    "zod": "^3.20.2",
-  "engines": {
-    "node": "18"
-  }
+    "zod": "^3.20.2"
+
+ 
      
   },
+
+  
   "scripts": {
     "start":"node server.ts",
-    "dev": "tsx watch src/server.ts",
-    "build":"tsup src"
+    "dev": "tsx watch src/server.ts"
 
   
     
